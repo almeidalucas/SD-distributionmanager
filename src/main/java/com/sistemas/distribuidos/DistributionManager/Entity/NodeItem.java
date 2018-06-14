@@ -6,6 +6,7 @@ import java.util.List;
 public class NodeItem {
 
   private String nodeId = "";
+  private boolean isOrdered = false;
   private List<Integer> list = new ArrayList<>();
 
   public List<Integer> getList() {
@@ -22,5 +23,13 @@ public class NodeItem {
 
   public void setNodeId(String nodeId) {
     this.nodeId = nodeId;
+  }
+
+  public boolean isOrdered() {
+    return isOrdered;
+  }
+
+  public void setOrdered(boolean ordered) {
+    isOrdered = ordered;
   }
 }
